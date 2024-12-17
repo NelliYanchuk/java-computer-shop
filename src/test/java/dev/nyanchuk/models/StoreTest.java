@@ -17,7 +17,7 @@ public class StoreTest {
     void setUp() {
         // Initialize the computer list and add a computer
         computerList = new ArrayList<>();
-        computer1 = new Computer("Dell", 16, "Intel i7", OperatingSystem.MS_WINDOWS, 1200);
+        computer1 = new Computer(1, "Dell", 16, "Intel i7", OperatingSystem.MS_WINDOWS, 1200);
         computerList.add(computer1);
 
         // Initialize the store with the computer list
@@ -34,7 +34,7 @@ public class StoreTest {
     @Test
     void testSetComputers() {
         ArrayList<Computer> newComputerList = new ArrayList<>();
-        Computer computer2 = new Computer("HP", 8, "Intel i5", OperatingSystem.LINUX_UBUNTU, 900);
+        Computer computer2 = new Computer(2, "HP", 8, "Intel i5", OperatingSystem.LINUX_UBUNTU, 900);
         newComputerList.add(computer2);
 
         store.setComputers(newComputerList);

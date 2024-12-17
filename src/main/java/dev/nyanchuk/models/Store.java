@@ -57,7 +57,5 @@ public class Store {
     public void setComputers(ArrayList<Computer> computers) {
         this.computers = computers;
     }
-
-    // Methods addComputer, removeComputer, searchComputer, listComputers
 }
 

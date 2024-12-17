@@ -1,6 +1,7 @@
 package dev.nyanchuk.models;
 
 public class Computer {
+    private int id;
     private String brand;
     private int memory;
     private String processor;
@@ -8,7 +9,8 @@ public class Computer {
     private double price;
 
     // Constructor
-    public Computer(String brand, int memory, String processor, OperatingSystem operatingSystem, double price) {
+    public Computer(int id, String brand, int memory, String processor, OperatingSystem operatingSystem, double price) {
+        this.id = id;
         this.brand = brand;
         this.memory = memory;
         this.processor = processor;
@@ -20,6 +22,15 @@ public class Computer {
     }
 
     // Getters and Setters
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getBrand() {
         return brand;
     }

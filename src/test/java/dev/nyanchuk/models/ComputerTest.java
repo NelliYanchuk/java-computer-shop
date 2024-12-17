@@ -14,8 +14,8 @@ public class ComputerTest {
     @BeforeEach
     void setUp() {
         // Create two computer objects with different attributes
-        computer1 = new Computer("Dell", 16, "Intel i7", OperatingSystem.MS_WINDOWS, 1200);
-        computer2 = new Computer("Apple", 8, "M1", OperatingSystem.APPLE_MACOS, 1500);
+        computer1 = new Computer(1, "Dell", 16, "Intel i7", OperatingSystem.MS_WINDOWS, 1200);
+        computer2 = new Computer(2, "Apple", 8, "M1", OperatingSystem.APPLE_MACOS, 1500);
     }
 
     // Test Getters and Setters
